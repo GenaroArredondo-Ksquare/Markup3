@@ -1,0 +1,50 @@
+* {
+    font-family: 'khpahnom', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    src: url(Fonts/khbaphnom.ttf) format('truetype');
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.stepper-container {
+    background-color: rgb(174, 175, 175);
+    width: 800px;
+    height: 900px;
+    display: grid;
+    gap: 2em;
+    grid-template-areas: 'header', 'header', 'header'
+                        'preferences', 'preferences', 'preferences'
+                        'form', 'form', 'drinks'
+                        'footer', 'footer' 'footer';
+}
+
+.steps-container {
+    grid-area: 'header';
+    display: flex;
+    border-radius: 1em;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    background-color: rgb(221, 219, 219);
+}
+
+.stepIcon {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    margin-top: 2.5em;
+    margin-left: 1em;
+}
+
+.green {
+    background-color: rgb(0, 134, 83);
+    color: white;
+}
+.blue {
+    background-color: blue;
+}
